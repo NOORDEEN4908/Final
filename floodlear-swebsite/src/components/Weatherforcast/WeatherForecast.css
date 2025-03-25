@@ -1,0 +1,198 @@
+.weather-app {
+    text-align: center;
+  
+  }
+  
+  form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  
+  input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 0.5rem;
+  }
+  
+  button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .forecast-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+    height: 700px;
+    background: rgb(37, 150, 190);
+  }
+  
+  .weather-card {
+    background: white;
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .weather-card h3 {
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+    color:#ddd;
+  }
+  
+  .weather-card p {
+    margin: 0.3rem 0;
+    font-size: 0.9rem;
+    color:white;
+  }
+  
+  .weather-card img {
+    width: 50px;
+    height: 50px;
+    margin: 0.5rem 0;
+  }
+  .clear_bg {
+    background-image: url('../Assets/clearsky.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .cloud_bg {
+    background-image: url('../Assets/closeup-large-gray-clouds.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .rainy_bg {
+    background-image: url('../Assets/rain.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .snowy_bg {
+    background-image: url('../Assets/snow.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .default_bg {
+    background-image: url('../Assets/drizzlesky.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  .forecast-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    overflow-x: auto;
+    margin-top: -9px;
+    color: white;
+    ;
+  }
+  
+  .forecast-item {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-width: 150px;
+    flex: 1;
+  }
+  .weather-app-container {
+    display: flex;
+    flex-direction: row;
+    height: 600px;
+    padding: 1rem;
+    transition: background-color 0.5s ease;
+
+    gap: 0; /* Ensures no gap between components */
+  }
+  
+  .current-weather {
+    flex: 1;
+   
+    border-radius: 40px;
+    padding: 1.5rem;
+    margin-right: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  
+  .forecast-container {
+    display: flex;
+    width: 50%;
+    flex-wrap: wrap;
+    height: 500px;
+    gap: 1rem;
+    justify-content: end;
+    overflow-y: scroll;
+  }
+  
+  
+  
+
+  .weather-forecast-container {
+  
+ 
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 50%;
+
+  }
+  
+  .forecast-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid */
+    gap: 1rem;
+    padding: 1rem;
+    max-width: 100%;
+  }
+  
+  .forecast-item {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 60px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    height: 450px; /* Set height of the forecast box */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .forecast-item img {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .forecast-item p {
+    font-size: 1.4rem;
+    margin: 0.5rem 0;
+  }
+  
+  .weather-forecast-container h3 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: white;
+  }
+  

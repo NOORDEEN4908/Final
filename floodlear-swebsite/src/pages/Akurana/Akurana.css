@@ -1,0 +1,93 @@
+/* Center the title */
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Weather Graphs container */
+.weather-graphs-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  max-width: 100%;
+  margin: auto;
+}
+
+/* Date Picker container with icon */
+.date-picker-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  position: relative; /* For positioning the calendar overlay */
+}
+
+/* Date Picker styling */
+.date-picker-container .MuiPickersDay-root {
+  font-size: 0.875rem;
+}
+
+.date-picker-container .MuiCalendarPicker-root {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  background-color: #fff;
+  padding: 10px;
+}
+
+/* Overlay for the calendar when clicked */
+.overlay {
+  position: fixed; /* Fixed positioning */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999; /* Ensures it is above the rest of the content */
+}
+
+/* Small Date Picker on side by side layout */
+.side-by-side-date-picker {
+  display: flex;
+  gap: 20px; /* Space between date pickers */
+}
+
+.graph-box {
+  flex: 1 1 calc(50% - 20px); /* Adjust for two graphs in a row with spacing */
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  min-width: 320px;
+  min-height: 280px;
+  box-sizing: border-box;
+  padding: 15px;
+}
+
+.graph-box h2 {
+  font-family: Arial, sans-serif;
+  color: #222;
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+}
+
+.chart-container {
+  width: 100%;
+  height: 250px;
+}
+
+/* Adjust for small screens */
+@media (max-width: 768px) {
+  .graph-box {
+    flex-basis: 100%; /* Stacks graphs vertically on smaller screens */
+  }
+
+  .side-by-side-date-picker {
+    flex-direction: column; /* Stack date pickers on small screens */
+  }
+}
